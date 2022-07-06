@@ -26,9 +26,8 @@ SECRET_KEY = 'django-insecure-lip3qd(0dq(e!!b)*urzwc)8+fpq4=!u$u3$$rtiv0v4sx%q%5
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'aecd-2001-b400-e33f-d74d-e8d0-8143-4c6-ac2e.jp.ngrok.io',
-    '9d53-2001-b400-e33f-d74d-8874-6787-9bf-ba09.jp.ngrok.io' ,
-    #  '127.0.0.1'
+    '6be4-2001-b400-e303-4fe5-23d2-cf50-1a9a-221d.ngrok.io',
+
 ]
 
 
@@ -131,7 +130,6 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-# line bot information
+# FIXME: secret key commited to public repo.
 LINE_CHANNEL_ACCESS_TOKEN = 'Dtuvg6wZ5i4Pryxow/mf1vpDqIil7KHK/HbmzO9DmSlhjC+j7Rsw4WmN5pBYtjCi3I/wCDLDHBv5ZwljiINHEbHyOaZ4glXfXp+aLfBpEF0dxaJzpSSXZWm63lgrA16v8gUYRimdEge+2pzqsGMR/gdB04t89/1O/w1cDnyilFU='
-
 LINE_CHANNEL_SECRET = '8528c7e6622622f987da83306ecc0bad'

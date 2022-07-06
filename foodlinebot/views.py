@@ -36,12 +36,13 @@ def callback(request):
                 # with open("out.txt", "w", encoding='utf-8') as f:
                 #     for line in str(food.scrape()):
                 #         f.write(line)
-                        
+                # print(food.scrape())
                 
                 line_bot_api.reply_message(  
                     event.reply_token,
-                    TextSendMessage(text=str(food.scrape())[:501])
-                )
+                    TextSendMessage(text=food.scrape())
+                    )
+                
         return HttpResponse()
     else:
         return HttpResponseBadRequest()

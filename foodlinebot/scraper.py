@@ -5,8 +5,10 @@ import requests
 
 class Food(ABC):
  
-    def __init__(self, area):
+    def __init__(self, area, category, price):
         self.area = area  
+        self.category = category
+        self.price = price
  
     @abstractmethod
     def scrape(self):
@@ -19,7 +21,8 @@ class IFoodie(Food):
     def scrape(self):
         response = requests.get(
             "https://ifoodie.tw/explore/" + self.area +
-            "/list?opening=true&sortby=popular")
+            "/list/" +  self.category + 
+            "?priceLevel=" + self.price +"&opening=true&sortby=popular")
             
         soup = BeautifulSoup(response.content, "html.parser")
         
